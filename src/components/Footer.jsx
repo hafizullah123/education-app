@@ -1,20 +1,7 @@
-import { Link } from "react-router-dom";
-
-const Navbar = () => (
-  <nav className="bg-blue-600 text-white p-4 flex justify-between">
-    <h1 className="text-xl font-bold">EduApp</h1>
-    <div className="space-x-4">
-      <Link to="/" className="hover:underline">
-        Home
-      </Link>
-      <Link to="/courses" className="hover:underline">
-        Courses
-      </Link>
-      <Link to="/contact" className="hover:underline">
-        Contact
-      </Link>
-    </div>
-  </nav>
+const Footer = () => (
+  <footer className="bg-gray-800 text-white text-center p-4 mt-10">
+    © 2025 EduApp. All rights reserved.
+  </footer>
 );
 
-export default Navbar;
+export default Footer;

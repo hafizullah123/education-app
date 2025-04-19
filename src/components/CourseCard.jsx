@@ -1,20 +1,8 @@
-import { Link } from "react-router-dom";
-
-const Navbar = () => (
-  <nav className="bg-blue-600 text-white p-4 flex justify-between">
-    <h1 className="text-xl font-bold">EduApp</h1>
-    <div className="space-x-4">
-      <Link to="/" className="hover:underline">
-        Home
-      </Link>
-      <Link to="/courses" className="hover:underline">
-        Courses
-      </Link>
-      <Link to="/contact" className="hover:underline">
-        Contact
-      </Link>
-    </div>
-  </nav>
+const CourseCard = ({ title, description }) => (
+  <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+    <h3 className="text-lg font-bold mb-2">{title}</h3>
+    <p>{description}</p>
+  </div>
 );
 
-export default Navbar;
+export default CourseCard;
